@@ -11,11 +11,11 @@
 
 .contador-de-productos{
     background-color: red;
-    padding: 5px;
-    font-size: 20px;
+    padding: 6px;
+    font-size: 15px;
     border-radius: 50%;
-    top: 71px;
-    right: 1px;
-    margin: 4px;
+    top: 10px;
+    right: 14px;
+    margin: 5px;
     position: absolute;
 }

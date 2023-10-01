@@ -24,7 +24,7 @@ const NavBar = () => {
           <li>Envios</li>
           <Menu >
             <MenuButton className='link-dropdown'>
-              libros
+            <i className="bi bi-caret-down">libros</i>
             </MenuButton>
             <MenuList>
 

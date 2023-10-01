@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #6b6b6b;
+    background-color: #5f7d95;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@
 .links {
     list-style: none;
     display: flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:monospace;
     font-size: 20px;
 }
 

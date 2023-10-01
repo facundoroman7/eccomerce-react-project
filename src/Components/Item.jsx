@@ -1,11 +1,14 @@
 import { Card, Image, Stack, Text, Divider, Heading, ButtonGroup, Button, CardBody,  CardFooter } from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
 
+
 function Item( {producto}) {
 
-  console.log(producto);
+ 
+
   return (
     <div key={producto.id}>
+      
         <Card maxW='sm'>
         <CardBody>
           <Image
@@ -22,7 +25,7 @@ function Item( {producto}) {
               ${producto.precio}
             </Text>
             <Text color='blue.600' fontSize='2xl'>
-              {producto.stock}
+              Stock: {producto.stock}
             </Text>
           </Stack>
         </CardBody>
