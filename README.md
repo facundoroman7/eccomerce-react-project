@@ -1,13 +1,17 @@
-# React + Vite
+# Mi Proyecto de Página Web de Libros
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a mi proyecto de página web de libros desarrollado en React. Este proyecto fue creado como parte del bootcamp de Coderhouse.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este proyecto es una aplicación web que muestra una lista de libros y detalles sobre cada libro. Los usuarios pueden explorar los libros, ver detalles específicos y agregar libros a su carrito de compras.
 
-<<<<<<< HEAD
+## Tecnologías Utilizadas
 
-=======
->>>>>>> 76a1f41e01be02b682107751d654b15256cb6a0d
+- React: Desarrollo de la interfaz de usuario.
+- Firebase: Almacenamiento de datos.
+- Chakra UI: Biblioteca de componentes para la interfaz de usuario.
+- Otros paquetes de npm utilizados.
+
+¡Gracias por revisar mi proyecto! 
+
