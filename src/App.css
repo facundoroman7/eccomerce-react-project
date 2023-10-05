@@ -2,4 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+
+.titulo-principal{
+  
+  text-align: center;
+  margin: 20px;
+}
+.titulo-principal h1{
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.titulo-principal p{
+  margin: 15px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
 }

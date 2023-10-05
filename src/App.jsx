@@ -23,7 +23,7 @@ function App() {
 
           <Routes>
 
-            <Route exact path='/' element={<ItemListContainer />} />
+            <Route exact path='/' element={<ItemListContainer  greting={"Leer, Imaginar, Descubrir: Tu Destino Literario Online"}/>} />
             <Route exact path='/categoria/:categoria' element={<ItemListContainer />} />
             <Route exact path='/item/:id' element={<ItemDetailContainer />} />
             <Route exact path='/cart' element={<Cart />} />

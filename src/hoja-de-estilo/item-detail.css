@@ -5,3 +5,31 @@
     margin: 25px;
 }
 
+
+.item-cart-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    padding: 30px;
+    gap: 20px;
+    border: solid 2px lightblue;
+}
+
+.img-cart-item{
+    width: 300px;
+}
+.decripcion-cart-item{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+
+.container-itemcart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

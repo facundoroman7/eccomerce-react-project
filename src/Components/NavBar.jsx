@@ -28,15 +28,15 @@ const NavBar = () => {
             </MenuButton>
             <MenuList>
 
-              <Link to={`/categoria/${"ficcion"}`}>
-              <MenuItem color="black">ficcion</MenuItem>
+              <Link to={`/categoria/${"fantasía"}`}>
+              <MenuItem color="black">fantasía</MenuItem>
               </Link>
 
-              <Link to={`/categoria/${"Auto-desarrollo"}`}> 
-              <MenuItem color="black">Auto-desarrollo</MenuItem>
+              <Link to={`/categoria/${"desarrollo"}`}> 
+              <MenuItem color="black">desarrollo</MenuItem>
               </Link>
 
-              <Link to={`/categoria/${"motivacion"}`}>
+              <Link to={`/categoria/${"motivación"}`}>
               <MenuItem color="black">motivacion</MenuItem>
               </Link>  
 

@@ -5,33 +5,43 @@ export const CartContext = createContext({
 });
 
 export const CartProvider = ({ children }) => {
+ 
   const [cart, setCart] = useState([]);
 
-  const addItem = (item, cantidad) => {
-    if (!isInCart  (item.id) ) {
-      setCart((prev) => [...prev, { ...item, cantidad }]);
-    } else {
-      console.error("el prod ya fue agregado");
-    }
-  };
+  const vaciarCarrito = () => setCart([]);
 
-  const removeItem = (itemId) => {
-    const cartUpdate = cart.filter((prod) => prod.id !== itemId);
-    setCart(cartUpdate);
-  };
-
-  const clearCart = () => {
-    setCart([]);
-  };
-
-  const isInCart = (itemId) => {
-    return cart.some(prod => prod.id === itemId)
+  const elCarrito = (id) => {
+    return cart.find (producto => producto.id === id) ? true : false
   }
 
+  const sacarDelCart = (id) => setCart(cart.filter(producto => producto.id !== id))
+
+  const agregarAlCart = (item, cantidad) => {
+    if(elCarrito(item.id)){
+      setCart(cart.map(producto => {return producto.id === item.id ? {...producto, cantidad: producto.cantidad + cantidad} : producto}))
+    }else{
+        setCart([...cart, {...item, cantidad}])
+    }
+  }
+
+
+
+const precioTotal = () => {
+  return cart.reduce ((prev, act) => prev + act.cantidad * act.precio, 0)
+}
+
+const Totalesproductos = () =>
+  cart.reduce((acumulador, productoActual) => acumulador + productoActual.cantidad, 0)
+
+
+
+
+
   return (
-    <CartContext.Provider value={{ cart, addItem, removeItem, clearCart }}>
+    <CartContext.Provider value={{vaciarCarrito, elCarrito, sacarDelCart, agregarAlCart, precioTotal, Totalesproductos, cart}}>
       {children}
     </CartContext.Provider>
   );
 };
+
 

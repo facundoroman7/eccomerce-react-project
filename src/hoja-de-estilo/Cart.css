@@ -1,0 +1,17 @@
+.imagen{
+    width: 100%;
+}
+
+.carrito-vacio{
+    font-size: 25px;
+}
+
+.total-productos{
+    font-size: 25px;
+    margin: 15px;
+    background-color: lightblue;
+    color: rgb(38, 38, 38);
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+}

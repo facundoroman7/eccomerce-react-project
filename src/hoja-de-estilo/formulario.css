@@ -1,0 +1,20 @@
+.formulario-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 40px;
+    min-width: 100%;
+    
+    border: solid 2px lightblue;
+    color: black;
+ }
+ 
+ 
+
+ .form-id{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px;
+ }

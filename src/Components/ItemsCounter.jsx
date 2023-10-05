@@ -1,56 +1,3 @@
-// import { useState } from "react"
-// import '../hoja-de-estilo/ItemsCounter.css'
-// import Item from "./Item"
-
-
-
-
-
-
-// const ItemsCounter = () => {
-
-//  const [counter , setCounter] = useState(1)
-
-//  const suma = () =>{
-//   setCounter(counter + 1)
-//  }
-
-//  const resta = () =>{
-//   if(counter > 0){
-//     setCounter(counter - 1)
-//   }
-//  }
-
-
-//   const onAdd = () =>{
-//    console.log(Item);
-
-//   }
-
-
-
-
-
-//   return (
-//     <>
-
-//       <div className="Contador-de-productos"> 
-
-//         <button onClick={resta}>-</button>
-//         <p>{counter} </p>
-//         <button onClick={suma}>+</button>
-
-//       </div>
-
-//        <button className="agregar-carrito" onClick={onAdd}>Agregar al carrito</button> 
-//     </>
-
-//   )
-// }
-
-// export default ItemsCounter
-
-
 import { useState } from "react"
 import '../hoja-de-estilo/ItemsCounter.css'
 
@@ -58,13 +5,13 @@ import '../hoja-de-estilo/ItemsCounter.css'
 const ItemsCounter = ({  initial, onAdd }) => {
   const [cantidad, setCantidad] = useState(initial)
 
-  const increment = () => {
+  const suma = () => {
     if (cantidad) {
       setCantidad(cantidad + 1)
     }
   }
 
-  const decrement = () => {
+  const resta = () => {
     if (cantidad > 1) {
       setCantidad(cantidad - 1)
     }
@@ -75,9 +22,9 @@ const ItemsCounter = ({  initial, onAdd }) => {
 
       <div className="Contador-de-productos">
 
-        <button onClick={decrement}>-</button>
+        <button onClick={resta}>-</button>
         <p>{cantidad} </p>
-        <button onClick={increment}>+</button>
+        <button onClick={suma}>+</button>
 
       </div>
 

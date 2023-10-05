@@ -1,8 +1,9 @@
 import { Spinner } from "@chakra-ui/react"
+import '../hoja-de-estilo/Spinner.css'
 
 const Loader = () => {
     return (
-        <div>
+        <div className="spinner">
             <Spinner
                 thickness='4px'
                 speed='0.65s'
